@@ -372,12 +372,12 @@ public:
 	 *  add channel support (interface compliant to newest MIXIM)
 	 *
 	 * @brief Sets the channel currently used by the radio. */
-	void setCurrentRadioChannel(int newRadioChannel);
+	virtual void setCurrentRadioChannel(int newRadioChannel) override;
 
 	/** @author Stefan Unterschuetz
 	 * add channel support (interface compliant to newest MIXIM)
 	 */
-	int getCurrentRadioChannel() const;
+	virtual int getCurrentRadioChannel() const override;
 
 	/**
 	 * Free the pointer to the decider and the AnalogueModels and the Radio.

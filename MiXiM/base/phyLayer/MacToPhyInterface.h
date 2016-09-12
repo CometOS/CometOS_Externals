@@ -83,6 +83,17 @@ public:
      * phy header.
 	 */
 	virtual int getPhyHeaderLength() = 0;
+
+    /** @author Stefan Unterschuetz
+     *  add channel support (interface compliant to newest MIXIM)
+     *
+     * @brief Sets the channel currently used by the radio. */
+    virtual void setCurrentRadioChannel(int newRadioChannel) = 0;
+
+    /** @author Stefan Unterschuetz
+     * add channel support (interface compliant to newest MIXIM)
+     */
+    virtual int getCurrentRadioChannel() const = 0;
 };
 
 #endif /*MACTOPHYINTERFACE_H_*/
