@@ -125,6 +125,10 @@ class BaseMobility : public BatteryAccess
 
   public:
 
+    Move& getMove() {
+        return move;
+    }
+
     /** @brief This modules should only receive self-messages
      *
      * Dispatches border messages to handleBorderMsg() and all other
